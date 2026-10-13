@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <meta name="description" content="Arsip rangkuman bacaan dan intisari.">
+  <title>Lynote</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./"><span class="brand-mark">L</span><span>Lynote</span></a>
+    <span class="header-label">ARSIP BACAAN</span>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <p class="eyebrow">READING ARCHIVE</p>
+      <h1>Merawat intisari<br><em>Menyimpan pemahaman</em></h1>
+      <p class="intro-text">Kumpulan rangkuman bacaan dan intisari yang ingin disimpan, dipelajari, dan dibaca kembali.</p>
+    </section>
+
+    <section class="archive">
+      <div class="archive-heading">
+        <div><p class="eyebrow">KOLEKSI</p><h2>Arsip bacaan</h2></div>
+        <span id="count" class="count">Memuat…</span>
+      </div>
+      <div class="tools">
+        <label class="search">
+          <span aria-hidden="true">⌕</span>
+          <span class="sr-only">Cari bacaan</span>
+          <input id="search" type="search" placeholder="Cari judul atau kata kunci…" autocomplete="off">
+        </label>
+        <label class="filter">
+          <span class="sr-only">Pilih kategori</span>
+          <select id="category"><option value="all">Semua</option></select>
+        </label>
+      </div>
+      <div id="list" class="list" aria-live="polite"></div>
+      <p id="empty" class="empty" hidden>Tidak ada bacaan yang cocok.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="footer-brand" href="./">Lynote</a>
+    <span>Arsip bacaan · © 2026 Alypradana</span>
+  </footer>
+
+  <dialog id="reader" class="reader">
+    <div class="reader-top">
+      <span class="reader-label">LYNOTE</span>
+      <button id="close" class="close" type="button" aria-label="Tutup">×</button>
+    </div>
+    <article id="detail" class="detail"></article>
+  </dialog>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
